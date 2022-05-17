@@ -1,0 +1,8 @@
+<div class="container">
+  <h2><%= @article.title %></h2>
+  <%= @article.content %>
+</div>
+<p>What would you like to do now?</p>
+<%=link_to "Go back to homepage", "/articles" %>
+<%= link_to "Edit the article", edit_path %>
+<%= link_to "Delete the article", delete_path, method: :delete %>
